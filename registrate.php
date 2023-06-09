@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registrate</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href= "./style.scss">
+    
 </head>
 <body>
-  
-<form action="procesar-datos.php" method="POST">
-<!--<input name="logo" type="file">-->
-<input id="nombre" name="nombre" type="text" placeholder="nombre de la empreza">
-<input id="nit" name="nit" type="number" placeholder="nit">
-<input id="clave" name="clave" type="password" placeholder="contreseña">
-<input id="email" name="email" type="email" placeholder="email">
-<input type="checkbox">
-<input type="submit" value="registrar">
-</form>
+<div class="registrate-box">
+        <form action="procesar-registro.php" method="POST">
+            <h1>Regístrate</h1>
+            <div class="content">
+                <input class="file" name="logo" type="file">
+                <label for="nombre de la empresa">Nombre de la empresa</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Escribe el nombre de la empresa">
+                <label for="nit">NIT</label>
+                <input id="nit" name="nit" type="number" style="text-decoration: none;" placeholder="Escribe el NIT de la empresa">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo_empresa24@Gmail.com">
+                <label for="clave">password</label>
+                <input id="clave" name="clave" type="password" placeholder="Contreseña">
+                
+            </div>
+           
+            <label id="activar" class="terminos" for="terminos">Acepto términos y condiciones</label>
+            <input class="check" id="activar"  type="checkbox">
+            <input type="submit" value="registrar">
+            </form>
+
+    </div>
+   
 
 
 

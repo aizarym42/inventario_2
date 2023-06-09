@@ -1,3 +1,8 @@
+<?php
+session_start();
+$email = $_SESSION['username'];
+echo "<h1>biemvenido $email</h1>"
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

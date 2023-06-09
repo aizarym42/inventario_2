@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrate</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>login</title>
+    <link rel="stylesheet" href= "./style-login.scss">
 </head>
 <body>
-
-<input id="email-l" name="email-l" placeholder="email" type="email">
-<input id="clave-l" name="clave-l" placeholder="clave" type="password">
-<button type="submit">Iniciar Sesión</button>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/master.css">
+      </head>
+      <body>
+    
+        <div class="login-box">
+          <img src="lovo.jpg" class="avatar" alt="Avatar Image">
+          <h1>Iniciar sesión</h1>
+          <form action="validar-usuario.php" method="post">
+            <label for="Email">Email</label>
+            <input name="email-l" type="email" placeholder="Ejemplo@gmail.com">
+            
+            <label for="password">Password</label>
+            <input name="clave-l" type="password" placeholder="Ingrese su contraseña">
+            <input type="submit" value="Login">
+          </form>
+        </div>
+      </body>
+    </html>
+    
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
