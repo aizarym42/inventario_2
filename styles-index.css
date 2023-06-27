@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+header {
+  min-height: 70px;
+  display: flex;
+  background-color: rgb(144, 235, 255);
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a h2:hover {
+  color: rgb(89, 6, 167);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.contenedor {
+  display: flex;
+  height: 250px;
+  width: 280px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(92, 92, 131);
+}
+
+.contenedor-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.contenedor .contenedor-btn .contenido {
+  display: flex;
+  border: none;
+  background: transparent;
+}
+
+.contenedor .contenedor-btn .contenido img {
+  display: flex;
+  width: 280px;
+  height: 220px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contenedor .contenedor-btn a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles-index.css.map */
